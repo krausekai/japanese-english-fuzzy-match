@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Japanese/English Fuzzy Match Checker</title>
+		<script src="tiny_segmenter-0.2.js" charset="UTF-8"></script>
+		<script src="fuzzyMatch.js" charset="UTF-8"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+
+		<h2>Japanese/English Fuzzy Match % Checker</h2>
+
+		Sentence 1: <input type="text" id="s1"><br />
+		Sentence 2: <input type="text" id="s2">
+		<button id="submit">Calculate Difference</button>
+
+		<script>
+			function check() {
+				var s1 = document.getElementById('s1').value;
+				var s2 = document.getElementById('s2').value;
+				var result = fuzzyMatch(s1,s2);
+				window.alert('There is a ' + result + '%' + ' difference!');
+			}
+			document.getElementById('submit').addEventListener("click", check);
+		</script>
+
+		<br /><center><a href="https://github.com/krausekai/japanese-english-fuzzy-match">See Code on Github</a> | © Kai Krause</center>
+	</body>
+</html>
