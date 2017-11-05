@@ -1,6 +1,9 @@
-
-
 /*
+	MIT License
+	Copyright (c) 2017 Kai Krause <kaikrause95@gmail.com>
+	See license here: https://github.com/krausekai/japanese-english-fuzzy-match/blob/master/LICENSE.txt
+	------------------------------------
+	This code is based on research from:
 	https://www.tm-town.com/blog/the-fuzziness-of-fuzzy-matches
 	https://en.wikipedia.org/wiki/Levenshtein_distance
 */
