@@ -165,7 +165,6 @@ function fuzzyMatch (s1, s2) {
 		// However for now, lets make it so that if it is not out of order to not change weighting. But, if it is out of order, then change weighting by 0.25.
 		// To be more complex, we could + more weight based on amount of steps in distance.
 		if (previousPos > currentPos && currentPos != -1 && previousPos != -1) {
-			//console.log ("Out of order");
 			count = count - 0.2;
 		}
 	}
