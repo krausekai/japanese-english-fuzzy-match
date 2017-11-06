@@ -5,7 +5,6 @@
 	------------------------------------
 	This code is based on research from:
 	https://www.tm-town.com/blog/the-fuzziness-of-fuzzy-matches
-	https://en.wikipedia.org/wiki/Levenshtein_distance
 */
 
 // 0 to 100% (0 no match, 100 perfect match)
@@ -173,6 +172,7 @@ function fuzzyMatch (s1, s2) {
 	return Math.floor(count / longer.length * 100);
 }
 
+// editDistance() is based on Levenshtein distance, from https://stackoverflow.com/a/36566052/1679669
 function editDistance(s1, s2) {
 	s1 = s1.toLowerCase();
 	s2 = s2.toLowerCase();
